@@ -1,5 +1,7 @@
 # Tree And Routes Study
 
+npm install ile kurulumunu yapabilirsiniz.
+
 ## Görev - 1 - Router Kullanımı
 
 - Senaryo: Biz uygulamada 2 farklı sayfa oluşturmak istiyoruz. Bu sayfaların biri "Home" diğeri ise "Tree Page" olacak. "Home" sayfasında bir "Tree Page" linki olacak. "Tree Page" sayfasında "Tree" Component'ı olacak. Bu sayfalara ait route'ları oluşturunuz.
