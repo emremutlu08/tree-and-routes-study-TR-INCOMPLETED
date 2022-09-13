@@ -2,69 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+/\*
 
-In the project directory, you can run:
+- Görev - 1 - Router Kullanımı
 
-### `npm start`
+- Senaryo: Biz uygulamada 2 farklı sayfa oluşturmak istiyoruz. Bu sayfaların biri "Home" diğeri ise "Tree" olacak. "Home" sayfasında bir "Tree" componenti olacak. Bu "Tree" componenti "Tree" sayfasında da olacak. Bu sayfalara ait route'ları oluşturup "Home" sayfasına yönlendiren bir link oluşturunuz.
+  \*/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+/\*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Görev - 2 - Tree Yapısı Kullanımı
 
-### `npm test`
+- Senaryo: Bir servisten bize Tree Component ile uyumlu olmayan ancak Tree Component ile sergilenmesi gereken bir json objesi dönmüştür. Ve bizim bu objeyi Tree Component ile uyumlu hale getirmemiz gerekmektedir. (Not: "ItemList" içerisinde sonu belirli olmayan bir şekilde iç içe "ItemList" dizileri bulunmaktadır. public > json > tree.json içerisindeki "ItemList" sayısı artabilir / azalabilir.)
+- Kullanacağımız Tree Component'ı => https://www.primefaces.org/primereact/tree/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+? İpuçları:
+? "data" içerisinde bir json objesi var.
+? Bu objenin içerisinde iç içe "ItemList" dizileri var.
+? "ItemList" yerine "children" isminde dizileri bekliyor.
+? "DisplayName" yerine "label" isminde bir değer bekliyor.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+? Sizlerden beklentimiz public > json > tree.json dosyasına dokunmadan sadece yukarıdaki "data" objesini
+? "children" ve "label" isimlerine göre düzenleyerek (veya ekleyerek) Tree Component'ı ile uyumlu hale getirmenizdir.
+\*/
