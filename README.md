@@ -13,8 +13,8 @@
 
 - "data" içerisinde bir json objesi var.
 - Bu objenin içerisinde iç içe "ItemList" dizileri var.
-- "ItemList" yerine "children" isminde dizileri bekliyor.
-- "DisplayName" yerine "label" isminde bir değer bekliyor.
+- Tree Component'ı "ItemList" yerine "children" isminde dizileri bekliyor.
+- Tree Component'ı "DisplayName" yerine "label" isminde bir değer bekliyor.
 
 - Sizlerden beklentimiz public > json > tree.json dosyasına dokunmadan sadece yukarıdaki "data" objesini
 - "children" ve "label" isimlerine göre düzenleyerek (veya ekleyerek) Tree Component'ı ile uyumlu hale getirmenizdir.
